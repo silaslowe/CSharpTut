@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "yOk1+f92Hd6swZrk7YZuap+35/K8hrvsVdQgklxcmtswNkoCDRV1rbgq21Pu+8+PAO8M8EVGQ8NbA0yWLDUi5A==",
+  "success": true,
+  "projectFilePath": "/Users/silaslowe/Desktop/C# FCC Tut/Catalog/Catalog.csproj",
+  "expectedPackageFiles": [
+    "/Users/silaslowe/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/Users/silaslowe/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/Users/silaslowe/.nuget/packages/swashbuckle.aspnetcore/5.6.3/swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "/Users/silaslowe/.nuget/packages/swashbuckle.aspnetcore.swagger/5.6.3/swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "/Users/silaslowe/.nuget/packages/swashbuckle.aspnetcore.swaggergen/5.6.3/swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "/Users/silaslowe/.nuget/packages/swashbuckle.aspnetcore.swaggerui/5.6.3/swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}
