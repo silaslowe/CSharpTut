@@ -14,7 +14,8 @@ namespace Catalog.Controllers
     {
         private readonly IItemsRepository repository;
 
-        public ItemsController(IItemsRepository repository){
+        public ItemsController(IItemsRepository repository)
+        {
             this.repository = repository;
         }
 
@@ -29,12 +30,28 @@ namespace Catalog.Controllers
         {
             var item = repository.GetItem(id);
 
-            if(item is null){
-                return NotFound(); 
+            if (item is null)
+            {
+                return NotFound();
             }
 
-            return item.AsDto();  
+            return item.AsDto();
+        }
+        [HttpPost]
+        public ActionResult<ItemDto> CreateItem(CreateItemDto itemDto)
+        {
+            Item item = new()
+            {
+                Id = Guid.NewGuid(),
+                Name = itemDto.Name,
+                Price = itemDto.Price,
+                CreatedDate = DateTimeOffset.UtcNow
+            };
+
+            repository.CreateItem(item);
+
+            return CreatedAtAction(nameof(GetItem), new {id = item.Id}, item.AsDto());
         }
     }
-    
+
 }
